@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/telaInicial.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/recuperacaoConta.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/senhasCadastradas.css') }}">
+     <!--<link rel="stylesheet" href="/Gerenciador-de-Senhas-PassWizard/frontend/css/recuperacaoConta.css">>--> 
+    <title>Recuperação de Conta</title>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item-right">
+            <a href="/Gerenciador-de-Senhas-PassWizard/frontend/html/cadastro.html"><button class="voltar" onclick="goToMainPage()">sair</button></a> 
+        </div>
+
+        <div class="flex-item-left">
+            <p>Recuperação de conta</p>
+        </div>
+    </div>
+    <div class="container">
+      <form action="/action_page.php">
+        <div class="row">
+            <div class="col-5">
+                <label for="fname">Um e-mail com um código de verificação acaba de ser enviado para xxx•••••••••••@xxxx.com</label>
+            </div>
+                <div class="col-5">
+                    <input type="text" id="fname" name="firstname" placeholder="Inserir Código">
+                </div>
+                </div>
+        <div class="row">
+            <input type="submit" value="avançar">
+        </div>
+      </form>
+    </div>
+</body>
+</html>

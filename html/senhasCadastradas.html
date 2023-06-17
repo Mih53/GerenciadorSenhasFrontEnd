@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/senhasCadastradas.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='icons8-lápis-100.png') }}">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/eye-slash?f=classic&s=light"> 
+    <!-- <link rel="stylesheet" href="/Gerenciador-de-Senhas-PassWizard/frontend/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="stylesheet" href="/Gerenciador-de-Senhas-PassWizard/frontend/css/senhasCadastradas.css">
+    <link rel="stylesheet" href="/Gerenciador-de-Senhas-PassWizard/frontend/icons8-lápis-100.png">-->
+    <script src="{{ url_for('static', filename='js/mainPageRedirect.js') }}"></script>
+    <title>Senhas Cadastradas</title>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-item-right">
+            <a href="/Gerenciador-de-Senhas-PassWizard/frontend/html/cadastro.html"><button class="voltar" onclick="goToMainPage()">sair</button></a> 
+        </div>
+        <div class="flex-item-left">
+            <p>Senhas Cadastradas</p>
+        </div>
+    </div>
+
+    
+    <div class="topnav">
+        <div class="search-container">
+          <form action="/action_page.php">
+            <button type="submit"><i class="fa fa-search fa-3x"></i></button>
+            <input type="text" placeholder="Pesquisar local" name="search">
+            <button type="submit">Nova Senha</i></button>
+            <img width="50" height="50" src="https://img.icons8.com/external-neu-royyan-wijaya/50/external-eyes-neu-interface-neu-royyan-wijaya-2.png" alt="external-eyes-neu-interface-neu-royyan-wijaya-2"/>
+          </form>
+        </div>
+      </div>
+
+      <form class="form-inline" action="/action_page.php">
+        <label for="email">Sites/Aplicativos</label>
+        <label for="pwd">Senhas</label>
+       <!--<label>
+          <input type="checkbox" name="remember"> Remember me
+        </label>-->
+      <div class="formulario">
+                <form class="form-inline" action="/action_page.php">
+                    <label for="email"></label>
+                    <input type="email" id="email" placeholder="Gmail" name="email">
+                    <label for="pwd"></label>
+                    <input type="password" id="pwd" placeholder="*****************" name="pswd">
+                    <img width="40" height="40" src="https://img.icons8.com/windows/40/delete.png" alt="delete"/>
+                    <img width="35" height="35" src="https://img.icons8.com/external-tulpahn-detailed-outline-tulpahn/35/external-pencil-stationery-tulpahn-detailed-outline-tulpahn.png" alt="external-pencil-stationery-tulpahn-detailed-outline-tulpahn"/>       
+                    <!--<input type="checkbox" name="remember"> Remember me
+                    </label>-->
+                </form>
+                <form class="form-inline" action="/action_page.php">
+                    <label for="email"></label>
+                    <input type="email" id="email" placeholder="https://www.twitch.tv/" name="email">
+                    <label for="pwd"></label>
+                    <input type="password" id="pwd" placeholder="************" name="pswd">
+                    <img width="40" height="40" src="https://img.icons8.com/windows/40/delete.png" alt="delete"/>
+                    <img width="35" height="35" src="https://img.icons8.com/external-tulpahn-detailed-outline-tulpahn/35/external-pencil-stationery-tulpahn-detailed-outline-tulpahn.png" alt="external-pencil-stationery-tulpahn-detailed-outline-tulpahn"/>       
+
+                </form>
+                <form class="form-inline" action="/action_page.php">
+                    <label for="email"></label>
+                    <input type="email" id="email" placeholder="Riot Games" name="email">
+                    <label for="pwd"></label>
+                    <input type="password" id="pwd" placeholder="**************" name="pswd">
+                    <img width="40" height="40" src="https://img.icons8.com/windows/40/delete.png" alt="delete"/>
+                    <img width="35" height="35" src="https://img.icons8.com/external-tulpahn-detailed-outline-tulpahn/35/external-pencil-stationery-tulpahn-detailed-outline-tulpahn.png" alt="external-pencil-stationery-tulpahn-detailed-outline-tulpahn"/>       
+
+                </form>
+            </div>
+     </div>
+</body>
+</html>

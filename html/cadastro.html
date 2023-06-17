@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/telaInicial.css') }}">
+    <!--<link rel="stylesheet" href="/Gerenciador-de-Senhas-PassWizard/frontend/css/cadastro.css">--> 
+    <title>Página de Cadastro</title>
+</head>
+<body>
+
+  <div class="flex-container">
+    <div class="flex-item-right">
+       <!-- <a href="/register"><button class="cadastro">voltar</button></a>--> 
+           <a href="/Gerenciador-de-Senhas-PassWizard/frontend/html/cadastro.html"><button class="cadastro" onclick="goToMainPage()">voltar</button></a>
+    </div>
+
+
+    <div class="flex-item-left">   
+        <form action="/action_page.php">
+        <div class="row">
+            <div class="col-5">
+            <label for="fname">Nome Completo</label>
+            </div>
+            <div class="col-5">
+            <input type="text" id="fname" name="firstname" placeholder="Nome Completo">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5">
+            <label for="lname">Telefone</label>
+            </div>
+            <div class="col-5">
+            <input type="text" id="lname" name="lastname" placeholder="(xx - xxxxx-xxxx)">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5">
+            <label for="lname">Email</label>
+            </div>
+            <div class="col-5">
+            <input type="text" id="lname" name="lastname" placeholder="Email  Principal">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5">
+            <label for="lname">Senha</label>
+            </div>
+            <div class="col-5">
+            <input type="text" id="lname" name="lastname" placeholder="Escolha uma senha forte ">
+            </div>
+        </div>
+        <div class="row">
+            <input type="submit" value="Cadastrar">
+        </div>
+    </form>
+  </div>
+</body>
+</html>
